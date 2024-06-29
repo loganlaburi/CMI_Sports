@@ -1,3 +1,20 @@
+options(scipen=999)
+
+# Load packages
+library(corrplot)
+library(tidyverse)
+library(psych)
+library(ggpubr)
+library(ggplot2)
+library(dplyr)
+library(lm.beta)
+library(sjPlot)
+library(rstatix)
+library(sjtable2df)
+library(car)
+library("MatchIt")
+library(effectsize)
+
 # Turn the chracter or integer variables into numeric variables for the statistical analysis
 df <- df %>% mutate_if(is.character, as.numeric)
 df <- df %>% mutate_if(is.integer, as.numeric)
